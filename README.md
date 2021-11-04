@@ -1,8 +1,8 @@
-# To create serilizers from proto files we need tool called. Could be downloaded from url below
+# To create serializers from proto files we need a tool provided by Google for the supported languages. It could be downloaded from:
 https://github.com/protocolbuffers/protobuf/releases
 
-# If you want typescript typings for your serilizer to have nice intellisense you can also install ts-protoc-gen npm package globally
+# To create typescript typings for the serializers,  we can also install ts-protoc-gen npm package globally
 npm install -g ts-protoc-gen
 
-# Finally the command for creating the proto serilizers with typings:
+# Then the command for creating the proto serializers with ts typings is:
 protoc --js_out=import_style=commonjs,binary:. --ts_out="." humans.proto
