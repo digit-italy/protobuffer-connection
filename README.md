@@ -6,3 +6,5 @@ npm install -g ts-protoc-gen
 
 ## Then the command for creating the proto serializers with ts typings is:
 protoc --js_out=import_style=commonjs,binary:. --ts_out="." humans.proto
+
+
